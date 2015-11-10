@@ -50,7 +50,6 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
 AUDIO_FEATURE_ENABLED_FM := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
-AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
@@ -89,9 +88,6 @@ MALLOC_IMPL := dlmalloc
 # Motorola
 TARGET_USES_MOTOROLA_LOG := true
 
-# Power
-TARGET_POWERHAL_VARIANT := qcom
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 
@@ -120,7 +116,6 @@ BOARD_SEPOLICY_UNION += \
     akmd8963.te \
     atvc.te \
     batt_health.te \
-    bootanim.te \
     device.te \
     file_contexts \
     file.te \
